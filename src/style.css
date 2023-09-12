@@ -1,0 +1,71 @@
+:root {
+    --cream: #d8d7dc;
+    --strawberry: #eb9790;
+    --sienna: #d51d17;
+    --banana: #d7cf84;
+}
+
+@font-face {
+    font-family: 'Gluten';
+    src: url(/src/Gluten-VariableFont_slnt,wght.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/src/OpenSans-VariableFont_wdth,wght.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--banana);
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(20px, 1vw, 1vw);
+    height: 100vh;
+    width: 100vw;
+}
+
+img {
+    justify-content: center;
+    height: 40%;
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px;
+    
+}
+
+h1 {
+    font-family: 'Gluten', cursive;
+    font-size: clamp(40px, 1vw, 1vw)
+
+}
+
+h2 {
+    font-family: 'Gluten', cursive;
+    font-size: clamp(30px, 1vw, 1vw)
+}
+
+
+a {
+    color: var(--sienna);
+    text-decoration: none;
+}
+
+h1, h2, p {
+    margin: 15px 0px;
+}
+
+.attrib {
+    text-align: right;
+    font-size: clamp(12px, 0.8vw, 0.8vw);
+    padding: 10px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
